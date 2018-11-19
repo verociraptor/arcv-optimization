@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6D05C69D-F445-3367-B452-3F7C5554F0DF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ArcV</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\zelator\Documents\ArcV-master\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ArcV.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ArcV</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\zelator\Documents\ArcV-master\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ArcV.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ArcV</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\zelator\Documents\ArcV-master\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">ArcV.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">ArcV</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\zelator\Documents\ArcV-master\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">ArcV.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">ArcV</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_GLFW_WIN32;GLEW_BUILD;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_GLFW_WIN32;GLEW_BUILD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;GLEW_BUILD;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;GLEW_BUILD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;GLEW_BUILD;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;GLEW_BUILD;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;GLEW_BUILD;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLFW_WIN32;GLEW_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\bin\cmake.exe -HC:/Users/zelator/Documents/ArcV-master -BC:/Users/zelator/Documents/ArcV-master/build --check-stamp-file C:/Users/zelator/Documents/ArcV-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCXXCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeRCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\bin\cmake.exe -HC:/Users/zelator/Documents/ArcV-master -BC:/Users/zelator/Documents/ArcV-master/build --check-stamp-file C:/Users/zelator/Documents/ArcV-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCXXCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeRCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\bin\cmake.exe -HC:/Users/zelator/Documents/ArcV-master -BC:/Users/zelator/Documents/ArcV-master/build --check-stamp-file C:/Users/zelator/Documents/ArcV-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCXXCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeRCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\bin\cmake.exe -HC:/Users/zelator/Documents/ArcV-master -BC:/Users/zelator/Documents/ArcV-master/build --check-stamp-file C:/Users/zelator/Documents/ArcV-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCXXCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeRCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glew\src\glew.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\context.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\egl_context.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\init.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\input.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\monitor.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\vulkan.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\wgl_context.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\win32_init.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\win32_joystick.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\win32_monitor.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\win32_time.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\win32_tls.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\win32_window.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\window.c">
+      <ObjectFileName>$(IntDir)/extern/glfw/src/window.c.obj</ObjectFileName>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\glfw\src\xkb_unicode.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\adler32.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\compress.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\crc32.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\deflate.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\gzclose.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\gzlib.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\gzread.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\gzwrite.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\infback.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\inffast.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\inflate.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\inftrees.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\png.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngerror.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngget.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngmem.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngpread.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngread.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngrio.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngrtran.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngrutil.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngset.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngtrans.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngwio.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngwrite.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngwtran.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\pngwutil.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\trees.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\uncompr.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\extern\png\zutil.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClInclude Include="C:\Users\zelator\Documents\ArcV-master\include\ArcV\ArcV.hpp" />
+    <ClInclude Include="C:\Users\zelator\Documents\ArcV-master\include\ArcV\Math\Matrix.hpp" />
+    <ClInclude Include="C:\Users\zelator\Documents\ArcV-master\include\ArcV\Math\Matrix.inl" />
+    <ClInclude Include="C:\Users\zelator\Documents\ArcV-master\include\ArcV\Math\Vector.hpp" />
+    <ClInclude Include="C:\Users\zelator\Documents\ArcV-master\include\ArcV\Math\Vector.inl" />
+    <ClInclude Include="C:\Users\zelator\Documents\ArcV-master\include\ArcV\Processing\Image.hpp" />
+    <ClInclude Include="C:\Users\zelator\Documents\ArcV-master\include\ArcV\Processing\Image.inl" />
+    <ClInclude Include="C:\Users\zelator\Documents\ArcV-master\include\ArcV\Processing\Sobel.hpp" />
+    <ClInclude Include="C:\Users\zelator\Documents\ArcV-master\include\ArcV\Utils\Webcam.hpp" />
+    <ClInclude Include="C:\Users\zelator\Documents\ArcV-master\include\ArcV\Utils\Window.hpp" />
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\src\ArcV\Math\Matrix.cpp" />
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\src\ArcV\Processing\ImageColorspace.cpp" />
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\src\ArcV\Processing\ImageDetector.cpp" />
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\src\ArcV\Processing\ImageFilter.cpp" />
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\src\ArcV\Processing\ImageFormat.cpp" />
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\src\ArcV\Processing\ImageThreshold.cpp" />
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\src\ArcV\Processing\Sobel.cpp" />
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\src\ArcV\Utils\Webcam.cpp" />
+    <ClCompile Include="C:\Users\zelator\Documents\ArcV-master\src\ArcV\Utils\Window.cpp">
+      <ObjectFileName>$(IntDir)/src/ArcV/Utils/Window.cpp.obj</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\zelator\Documents\ArcV-master\build\ZERO_CHECK.vcxproj">
+      <Project>{0842C16F-A112-326A-82CF-2CE21EF6F6D8}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

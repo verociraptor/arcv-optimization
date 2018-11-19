@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5124242B-9B06-32AC-AAB5-9A598802AD0C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\zelator\Documents\ArcV-master\extern;C:\Users\zelator\Documents\ArcV-master\extern\png;C:\Users\zelator\Documents\ArcV-master\extern\glew\include;C:\Users\zelator\Documents\ArcV-master\extern\glfw\include;C:\Users\zelator\Documents\ArcV-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\bin\cmake.exe -HC:/Users/zelator/Documents/ArcV-master -BC:/Users/zelator/Documents/ArcV-master/build --check-stamp-file C:/Users/zelator/Documents/ArcV-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCXXCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeRCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\bin\cmake.exe -HC:/Users/zelator/Documents/ArcV-master -BC:/Users/zelator/Documents/ArcV-master/build --check-stamp-file C:/Users/zelator/Documents/ArcV-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCXXCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeRCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\bin\cmake.exe -HC:/Users/zelator/Documents/ArcV-master -BC:/Users/zelator/Documents/ArcV-master/build --check-stamp-file C:/Users/zelator/Documents/ArcV-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCXXCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeRCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\bin\cmake.exe -HC:/Users/zelator/Documents/ArcV-master -BC:/Users/zelator/Documents/ArcV-master/build --check-stamp-file C:/Users/zelator/Documents/ArcV-master/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/zelator/Documents/ArcV-master/CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeCXXCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeRCCompiler.cmake;C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\3.12.4\CMakeSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Users\zelator\Documents\cmake-3.12.4-win64-x64\cmake-3.12.4-win64-x64\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\zelator\Documents\ArcV-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\zelator\Documents\ArcV-master\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\zelator\Documents\ArcV-master\build\ZERO_CHECK.vcxproj">
+      <Project>{0842C16F-A112-326A-82CF-2CE21EF6F6D8}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\zelator\Documents\ArcV-master\build\ArcV.vcxproj">
+      <Project>{6D05C69D-F445-3367-B452-3F7C5554F0DF}</Project>
+      <Name>ArcV</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\zelator\Documents\ArcV-master\build\examples\colorspacesDemo.vcxproj">
+      <Project>{D621AB01-CB28-322C-BC1F-9D62EBF75269}</Project>
+      <Name>colorspacesDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\zelator\Documents\ArcV-master\build\examples\detectorsDemo.vcxproj">
+      <Project>{9B80E333-520F-3291-9216-AFD9FE3B963E}</Project>
+      <Name>detectorsDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\zelator\Documents\ArcV-master\build\examples\filtersDemo.vcxproj">
+      <Project>{4A9F61C7-724D-37EE-81CE-AE04895D3FE5}</Project>
+      <Name>filtersDemo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

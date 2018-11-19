@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/zelator/Documents/ArcV-master/examples/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/zelator/Documents/ArcV-master/build/examples/CMakeFiles/generate.stamp is up-to-date.
+  filtersDemo.cpp
+  filtersDemo.vcxproj -> C:\Users\zelator\Documents\ArcV-master\build\examples\Debug\filtersDemo.exe

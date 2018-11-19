@@ -1,0 +1,7 @@
+C:/Users/zelator/Documents/ArcV-master/build/CMakeFiles/ArcV.dir
+C:/Users/zelator/Documents/ArcV-master/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/zelator/Documents/ArcV-master/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/zelator/Documents/ArcV-master/build/examples/CMakeFiles/colorspacesDemo.dir
+C:/Users/zelator/Documents/ArcV-master/build/examples/CMakeFiles/detectorsDemo.dir
+C:/Users/zelator/Documents/ArcV-master/build/examples/CMakeFiles/filtersDemo.dir
+C:/Users/zelator/Documents/ArcV-master/build/examples/CMakeFiles/ALL_BUILD.dir
