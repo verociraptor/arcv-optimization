@@ -7,7 +7,7 @@
 int main() {
   const auto startTime = std::chrono::system_clock::now();
 
-  Arcv::Matrix<float> mat = Arcv::Image::read("../../assets/lena.png");
+  Arcv::Matrix<float> mat = Arcv::Image::read("./assets/lena.png");
 
   Arcv::Matrix<float> blurMat = Arcv::Image::applyFilter<ARCV_FILTER_TYPE_GAUSSIAN_BLUR>(mat);
   Arcv::Matrix<float> sharpenMat = Arcv::Image::applyFilter<ARCV_FILTER_TYPE_SHARPEN>(mat);

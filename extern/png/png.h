@@ -309,7 +309,7 @@
  */
 
 /* Version information for png.h - this should match the version in png.c */
-#define PNG_LIBPNG_VER_STRING "1.6.29"
+#define PNG_LIBPNG_VER_STRING "1.5.13"
 #define PNG_HEADER_VERSION_STRING " libpng version 1.6.29 - March 16, 2017\n"
 
 #define PNG_LIBPNG_VER_SONUM   16

@@ -9,7 +9,7 @@ template <>
 Matrix<> applyDetector<ARCV_DETECTOR_TYPE_CANNY>(const Matrix<>& mat) {
   const Sobel sobel(applyFilter<ARCV_FILTER_TYPE_GAUSSIAN_BLUR>(changeColorspace<ARCV_COLORSPACE_GRAY>(mat)));
   const Matrix<> directionMat = sobel.computeGradientDirection();
-  Matrix<> res = sobel.getSobelMat();
+  Matrix<> res = sobel.getSobelMat(); //Resolution of the sobel.
 
   for (std::size_t heightIndex = 1; heightIndex < sobel.getSobelMat().getHeight() - 1; ++heightIndex) {
     for (std::size_t widthIndex = 1; widthIndex < sobel.getSobelMat().getWidth() - 1; ++widthIndex) {

@@ -31,7 +31,7 @@ Matrix<> Sobel::computeGradientDirection() const {
 
 Matrix<> Sobel::computeHorizontalSobelOperator(const Matrix<>& mat) {
   const Matrix<float> horizKernel = {{ 1.f, 0.f, -1.f },
-                                     { 2.f, 0.f, -2.f },
+                                     { 1.f, 0.f, -2.f },
                                      { 1.f, 0.f, -1.f }};
 
   return mat.convolve(horizKernel);
