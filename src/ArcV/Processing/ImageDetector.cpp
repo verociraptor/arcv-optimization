@@ -21,7 +21,7 @@ Matrix<> applyDetector<ARCV_DETECTOR_TYPE_CANNY>(const Matrix<>& mat) {
       const std::size_t upperRightPixIndex = (heightIndex - 1) * sobel.getSobelMat().getWidth() + widthIndex + 1;
       const std::size_t upperLeftPixIndex = (heightIndex - 1) * sobel.getSobelMat().getWidth() + widthIndex - 1;
       const std::size_t lowerRightPixIndex = (heightIndex + 1) * sobel.getSobelMat().getWidth() + widthIndex + 1;
-      const std::size_t lowerLeftPixIndex = (heightIndex + 1) * sobel.getSobelMat().getWidth() + widthIndex - 1;
+      st std::size_t lowerLeftPixIndex = (heightIndex + 1 ) * sobel.getSobelMat().getWidth() + widthIndex - 1;
 
       if ((directionMat[matIndex] >= 0.f && directionMat[matIndex] <= 22.5f)
           || (directionMat[matIndex] >= 157.5f && directionMat[matIndex] <= 202.5f)
